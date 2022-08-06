@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>aa_abbr.py readme</title>
+</head>
+<body>
+<h1>README.md</h1>
+
+<h2>Overview</h2>
+
+<p>
+
+Often when writing for the web, we lean into using abbreviations. <abbr title="Random Access Memory">RAM</abbr>, 
+ <abbr title="Read Only Memory">ROM</abbr>, <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Red Green and Blue">RGB</abbr>, <abbr title="In Other Words">IOW</abbr>, <abbr title="Miles Per Hour">MPH</abbr>, and so on. Sometimes it's reasonable to expect
+your readers to know what they mean... but surprisingly often the things
+we take for granted as known... aren't. This project is specifically
+intended to help address that in a comfortable way without changing your
+writing style much, or even your presumptions about your readers.
+
+</p>
+<p>
+
+This <code>Python3</code> class, <code>aa_abbr.py</code>, takes <abbr title="HyperText Markup Language">HTML</abbr> text
+as input, and using a terms definition file, generates <abbr title="HyperText Markup Language">HTML</abbr> &lt;abbr&gt; tags
+to wrap the terms you have defined.
+
+</p>
+<p>
+
+In the provided definitions file, the term <abbr title="Random Access Memory">RAM</abbr> is defined this way:
+
+</p>
+
+<blockquote><code>RAM,Random Access Memory</code></blockquote>
+
+<p>
+
+This is what it looks like (in the Chrome browser) when a visitor to the
+ <abbr title="HyperText Markup Language">HTML</abbr> page hovers their mouse over the term <abbr title="Random Access Memory">RAM</abbr>: 
+
+</p>
+
+<blockquote><img src="example.png"></blockquote>
+
+<h2>Usage</h2>
+
+<P>
+
+Basic use is very easy:
+
+</p>
+<p>
+
+<pre>
+    import abbr from aa_abbr    # import class
+    ab = abbr('abbrdefs.data')  # instantiate class
+    outText = ab.abbr(inText)   # use class
+</pre>
+
+</p>
+<p>
+
+In addition, there are <code>set</code> calls that provide comprehensive
+control of class behavior, as well as <code>get</code> calls that read
+back the class's current states. These are listed at the top of the class
+in the comments.
+
+</p>
+<p>
+
+One useful function is the ability to set a list of terms to be ignored,
+even though they are present in the definitions file. You can do this at
+instantiation, or by calling...
+
+</p>
+
+<blockquote><code>setNopelist(['term1','term2','termN'])</code></blockquote>
+
+<p>
+
+...you would do this when a term is used in an unusual way that calls for
+it to be ignored in that particular context.
+
+</p>
+<p>
+
+Another way to do this dynamically is to surround a term you don't want
+processed with <abbr title="HyperText Markup Language">HTML</abbr> space entities instead of actual spaces:
+<code>&amp;#32;</code> That will prevent that particular instance of the
+term from being processed by <code>abbr()</code>.
+
+<h2>Data File</h2>
+
+<P>
+
+The defaults for the definitions file are:
+
+</p>
+
+<ul>
+<li> Blank lines are ignored</li>
+<li> Lines beginning with <code>#</code> are ignored</li>
+<li> The first comma delineates the term from the definition(s)</li>
+<li> A pair of vertical bars (<code>||</code>) delineate multiple definitions</li>
+</ul>
+
+<p>
+
+When there are multiple definitions, they will be numbered. This is what
+that looks like:
+
+</p>
+<p>
+
+<h3>In the definitions file:</h3>
+
+<blockquote><code>R/C,Remote Control||Radio Control</code></blockquote>
+
+<h3>In your source code:</h3>
+
+<blockquote>&quot;<code>&nbsp;R/C&nbsp;drone, hover</code>&quot;</blockquote>
+
+<h3>In the browser:</h3>
+
+<blockquote><img src="drone.png"></blockquote>
+
+<p>
+
+You can set which characters in the definitions file do what. The only
+hard-coded behavior in terms of reading the definitions file is ignoring
+blank lines.
+
+</p>
+<p>
+
+You can change these things either when invoking the class, or using
+various <code>set</code> calls within the class prior to calling the
+processor. You can also change which definitions file you use any time
+prior to processing the text.
+
+</p>
+<p>
+
+When defining terms in the definitions file, be aware that most <abbr title="HyperText Markup Language">HTML</abbr> is
+not allowed other than <abbr title="HyperText Markup Language">HTML</abbr> character entities. This is partially because
+the hover text in an <code>&lt;abbr&gt;</code> tag is contained within
+double quotes, like so...
+
+</p>
+
+<blockquote><code>&lt;abbr title="Random Access Memory"&gt;RAM&lt;/abbr&gt;</code></blockquote>
+
+<p>
+
+...and partially because hover text is not parsed by browsers for <abbr title="HyperText Markup Language">HTML</abbr> 
+formatting information.
+
+</p>
+<p>
+
+You can use double quotes in a definition but you must encode them as
+their <abbr title="HyperText Markup Language">HTML</abbr> entities:
+
+</p>
+
+<blockquote><code>&amp;quot;</code></blockquote>
+
+<p>
+
+The provided definitions file <code>abbrdefs.data</code> contains a
+variety of commonly used terms. You should expand it to include any other
+terms you desire. Adding terms will not slow down the processing step. A
+longer definitions file does linearly increase the instantiation time,
+but generally speaking, this should not be significant.
+
+<h2>Efficient Use</h2>
+
+<p>
+
+The class reads the definitions file once when it is instantiated. It
+won't read it again unless you call...
+
+</p>
+
+<blockquote><code>setSource('definitionsFILEname')</code></blockquote>
+
+<p>
+
+...to change or re-read it.
+
+</p>
+<p>
+
+When processing your <abbr title="HyperText Markup Language">HTML</abbr>, each word delineated by leading and trailing
+spaces or a leading space and a trailing <em>single</em> non-alpha-numeric
+character prior to a trailing space is processed. So <abbr title="Random Access Memory">RAM</abbr> would be
+processed here:
+
+</p>
+
+<blockquote>&quot;<code>&nbsp;RAM.&nbsp;</code>&quot;</blockquote>
+
+<p>
+
+But <em>not</em> here:
+
+</p>
+
+<blockquote>&quot;<code>&nbsp;RAM.&lt;p&gt;</code>&quot;</blockquote>
+
+<p>
+
+You can easily compensate for this by surrounding the
+<code>&lt;p&gt;</code> tag (or any other tag) with spaces, which the
+browser will collapse (hide) in the context of typical whitespace
+processing:
+
+</p>
+
+<blockquote>&quot;<tt>&nbsp;RAM.&nbsp;&lt;p&gt;&nbsp;</tt>&quot;</blockquote>
+
+<p>
+
+A similar issue exists at the beginning and end of lines. If a term
+starts a line, the preceeding character was an <abbr title="End Of Line">EOL</abbr> character rather than a
+space, so the term won't be caught. Simply add a space at the beginning
+of the line in the text to resolve this. Again, the browser will collapse
+the additional whitespace.
+
+</p>
+<p>
+
+<code>abbr()</code> will catch plurals by default, that is, terms that
+have a trailing <code>s</code>. So if <code>ROM</code> is defined in the
+terms file, both <abbr title="Read Only Memory">ROM</abbr> and <abbr title="Read Only Memory">ROM</abbr>s will be processed. You can disable this
+behavior at instantiation or by calling <code>setPlurals(False)</code>.
+
+</p>
+<p>
+
+If the plural term is located at the end of a line, the presence of the
+terminating <code>s</code> followed by the <abbr title="End Of Line">EOL</abbr> character is seen as
+<em>two</em> non-alpha characters, and the term will not be processed.
+Again, just add an extra space after the term to resolve this.
+
+</p>
+<p>
+
+When plural detection is on, text processing is a little slower. This has
+not been a problem for me, but <abbr title="Your Milage May Vary">YMMV</abbr>. 
+
+<h2>A <abbr title="Cascading Style Sheet">CSS</abbr> tip</h2>
+
+<p>
+
+The following <abbr title="Cascading Style Sheet">CSS</abbr> adds a red, dashed underline border to an
+<code>&lt;abbr&gt;</code> tagged term:
+
+</p>
+
+<blockquote><code>abbr {border-bottom: red dashed;}</code></blockquote>
+
+<p>
+
+Like this:
+
+</p>
+
+<blockquote>&quot;<code>The <span style="border-bottom: red dashed;"><abbr title="Read Only Memory">ROM</abbr></span>&nbsp;</code>chips&quot;</blockquote>
+
+<h2>Somewhat Subtle Gotchas</h2>
+
+<P>
+
+When you have <abbr title="HyperText Markup Language">HTML</abbr> in your file, there are some <abbr title="HyperText Markup Language">HTML</abbr> tags that have what
+amounts to raw text in them. For instance, the <code>&lt;img&gt;</code>
+tag can contain...
+
+</p>
+
+<blockquote><code>title="some title text"</code></blockquote>
+
+<p>
+
+If a term appears surrounded by spaces inside those quotes, then
+<code>&lt;abbr&gt;</code> tags will be generated <em>inside</em> the
+title quotes. Browser confusion can result.
+
+</p>
+<p>
+
+To avoid this, you can use space entities instead of actual spaces around
+the term(s) at issue:
+
+</p>
+
+<blockquote><code>title="some&amp;#32;ROM&amp;#32;code"</code></blockquote>
+
+</body>
+</html> 
