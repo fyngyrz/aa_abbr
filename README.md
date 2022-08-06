@@ -5,4 +5,4 @@ fiddling, which I have performed for you below. Because Github's markdown proces
 tags, I've prepared a proper readme in HTML. Follow this link to see the actual readme as the good lard
 intended:
 
-<a href="https://htmlpreview.github.io/?https://github.com/fyngyrz/aa_abbr/blob/main/README.html">README.html</a>
+<a target="_blank" href="https://htmlpreview.github.io/?https://github.com/fyngyrz/aa_abbr/blob/main/README.html">README.html</a>
