@@ -1,0 +1,244 @@
+# Definitions for abbreviations
+# =============================
+
+# Important: for double quotes, use &quot;
+# ----------------------------------------
+
+4WD,Four Wheel Drive
+4HD,Four Hoove Drive
+AA,Anti-Aircraft
+AC,Alternating Current||Air Conditioning
+A/D,Analog to Digital
+AE,Automatic Exposure
+AF,Autofocus
+AFC,Automatic Frequency Control
+AFSK,Audio Frequency Shift Keying
+AGC,Automatic Gain Control
+AGS,Auxilliary Ship
+AGSc,Auxilliary Ship, Coastal
+AH,Ampere Hour
+AKA,Also Known As
+AM,Amplitude Modulation||Ante Meridian
+ASA,American Standards Association
+ASAP,As Soon As Possible
+ATF,American Tae Kwon Do Federation
+AV,Audio Video
+Av,Aperture Priority
+B&amp;W,Black and White
+BB,Battleship
+BBC,British Broadcasting Corporation
+BCB,BroadCast Band
+BCI,Artificial wooden beam used in construction
+BFO,Beat Frequency Oscillator
+BTW,By The Way
+CA,Chromatic Abberation||California
+CAD,Computer Aided Design
+CB,Citizen's Band
+CCW,Counter-Clockwise
+CD,Compact Disc
+CGI,Common Gateway Interface||Computer Generated Imagery
+CME,Coronal Mass Ejection
+CPU,Central Processing Unit
+CSS,Cascading Style Sheet
+CV,Aircraft Carrier||Curriculum Vitae
+CW,Continuous Wave (typically Morse code)||ClockWise
+dB,Decibel
+D/A,Digital to Analog
+DLP,Digital Light Processor
+DNG,Digital Negative
+DOF,Depth Of Field
+DC,Direct Current
+DD,Destroyer
+DHCP,Dynamic Host Configuration Protocol
+DIP,Dual Inline Package
+DJ,Disc Jockey
+DLNA,Digital Living Network Alliance
+DMU,Data Management Unit
+DPDT,Double Pole, Double Throw
+DPI,Dots Per Inch
+DSLR,Digital Single Lens Reflex (camera)
+DSO,Deep Space Object
+DSP,Digital Signal Processing
+DTS,Digital Transmission System
+DVD,Digital Video Disc
+DVR,Ditgital Video Recorder
+DX,Distance
+EF,Electro Focus
+EF-S,Electro Focus-Short Back Focus
+ELI5,Explain Like I'm 5
+EM,Electro-magnetic
+EOL,End Of Line
+EOS,Electro Optical System
+EPROM,Erasable Programmable Read Only Memory
+EXIF,Exchangeable Image File Format
+FAX,Facsimile
+FCC,Federal Communications Commission
+F/D,Frequency to Digital
+FEMA,Federal Emergency Management Agency
+FET,Field Effect Transistor
+FFT,Fast Fourier Transform
+FIV,Feline Aids
+FM,Frequency Modulation
+FOV,Field Of View
+FSL,Frequency Shift, Lower
+FTW,For The Win
+FWIW,For What It's Worth
+GB,Gigabyte (1,000,000,000 bytes)
+GHz,GigaHertz
+GIF,Graphics Interchange Format
+GMT,Greenwich Mean Time
+GPS,Global Positioning System
+GPU,Graphics Processing Unit
+GUI,Graphic User Interface
+H&alpha;,Hydrogen Alpha
+HAM,Hold And Modify
+HD,High Definition||Hard Drive||Hard Disk
+HD/AM,High Definition Amplitude Modulation
+HD/FM,High Definition Frequency Modulation
+HDMI,High-Definition Multimedia Interface
+HF,High Frequency
+HTML,HyperText Markup Language
+Hz,Hertz (cycles per second)
+IC,Integrated Circuit
+ID,Identify or Identification
+IF,Intermediate Frequency||Interface
+I/O,Input/Output
+IMD,Intermodulation Distortion
+IOW,In Other Words
+IP,Internet Protocol
+IR,Infrared
+IRAS,Infrared Astronomy Satellite
+IRL,In Real Life
+IS,Image Stabilization
+ISO,International Standards Organization
+ISS,International Space Station
+JFET,Junction Field Effect Transistor
+JPEG,Joint Photographic Experts Group
+kg,Kilogram
+kHz,KiloHertz
+KHz,KiloHertz
+kW,Kilowatt
+LA,Los Angeles
+LAN,Local Area Network
+lbs,Pounds
+LCD,Liquid Crystal Display
+LED,Light Emitting Diode
+LOL,Laugh Out Loud
+LSB,Lower Sideband
+Mb,MegaByte
+MF,Manual Focus
+MHz,MegaHertz
+MP,Megapixel
+MP4,Motion Picture file format
+MPH,Miles Per Hour
+mS,Milliseconds
+MSG,Monosodum Glutimate
+MST,Mountain Standard Time
+MT,Montana
+N.C.,Normally Closed
+ND,North Dakota
+NE,North East
+NGC,New General Catalog
+N.O.,Normally open
+NOAA,National Oceanic and Atmospheric Administration
+N.S.,Nuclear Ship
+nV,Nanovolt
+NW,North West
+NWS,National Weather Service
+NY,New York
+NYC,New York City
+OJ,Orange Juice
+OMG,Oh My God
+OOF,Out Of Focus
+OS,Operating System
+OSB,One Side Bad (for wood construction materials)
+OSX,Apple's operating system for the Mac computer
+OTOH,On The Other Hand
+PA,Pennsylvania||Power Amplifier
+PCB,Printed Circuit Board
+PCS,Patrol Craft, Submarine
+PM,Post Meridian
+PNG,Portable Network Graphics
+PP,Postprocessing
+PSK31,Phase Shift Keying, 31 baud
+PSU,Power Supply Unit
+QRM,Interference
+QRZ,Radio term for &quot;Anyone around?&quot;
+QSL,Confirmation of reception
+RAM,Random Access Memory
+RAW,Deep photographic detail file format
+R/C,Remote Control||Radio Control
+R&amp;D,Research and Development
+RDS,Radio Data System
+RF,Radio Frequency
+RFI,Radio Frequency Interference
+RGB,Red Green and Blue
+RMS,Root Mean Square||Royal Mail Ship
+ROM,Read Only Memory
+RPM,Revolutions Per Minute
+R/O,Reverse Osmosis
+RTTY,Radio Teletype
+SACD,Super Audio Compact Disc
+SC,Subchaser
+SD,South Dakota
+SDR,Software Defined Radio
+SE,South East
+SF,Science Fiction
+SFWA,Science Fiction Writers of America
+SITOR,Simplex Teletype Over Radio
+SLR,Single Lens Reflex
+S/N,Signal to Noise
+SRAW,Canon RAW image file format
+SRAW2,Canon RAW image file format
+SSB,Single SideBand
+SSH,Secure Shell protocol
+SSN, Nuclear Submarine
+SSTV,Slow Scan Television
+ST:E,Star Trek: Enterprise
+SW,Shortwave or South West
+SWR,Standing Wave Ratio
+TB,Terabyte (1,000,000,000,000 bytes)
+TC,Teleconverter
+TCP,Transmission Control Protocol
+THD,Total Harmonic Distortion
+THX,Tomlinson Holman Crossover, originally from Lucasfilm||Thanks
+TKD,Tae Kwon Do, a Korean martial art
+T/R,Transmit / Receive
+TL;DR,Too Long; Didn't Read
+TU,Terminal Unit
+Tv,Shutter Priority
+TV,Television
+TX,Texas||Transmit
+UC,Ultra Capacitor
+UDP,User Datagram Protocol
+UFO,Unidentified Flying Object
+UHF,Ultra High Frequency
+UI,User Interface
+UPNP,Universal Plug and Play
+URL,Uniform Resource Locator
+UK,United Kingdom
+UOO,Unidentified Orbital Object
+US,United States (of America)
+USA,United States of America
+USB,Universal Serial Bus||Upper Sideband
+USGS,United States Geological Survey
+USM,Ultrasonic Motor
+USS,United States Ship
+uV,Microvolt
+UV,Ultraviolet
+VAC,Volts Alternating Current
+VDC,Volts Direct Current
+VF,Viewfinder
+VFO,Variable Frequency Oscillator
+VHF,Very High Frequency
+VLS,Vertical Launch System
+VM,Virtual Machine
+WARC,World Administrative Radio Conference
+WRT,With Regard To
+WSW,West South West
+WTF,World Tae Kwon Do Federation||What The Fuck
+WWII,World War Two
+XP,An older Microsoft computer operating system
+Y2K,Year 2000
+YMMV,Your Milage May Vary
+ZIF,Zero Insertion Force
